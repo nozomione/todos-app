@@ -1,0 +1,17 @@
+.delete-todo {
+	--size: 2rem;
+
+	&-btn {
+		color: var(--lavender-light);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		width: var(--size);
+		height: var(--size);
+
+		&:hover {
+			color: var(--teal);
+		}
+	}
+}

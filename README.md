@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Todos App
+
+Created using hooks and context API with a simple drag and drop implementation.
+
+(Tech stack) React.js, Typescript, Javascript, CSS/SCSS
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

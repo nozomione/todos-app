@@ -1,0 +1,45 @@
+.add-todo {
+	display: flex;
+	justify-content: space-between;
+	padding: var(--unit-2);
+	position: relative;
+
+	form {
+		width: 100%;
+	}
+
+	input[type='text'] {
+		background: none;
+		border: none;
+		border-bottom: 1px solid var(--gray-c);
+		font-size: 1rem;
+		padding: var(--input-padding);
+		width: calc(100% - 7.5rem);
+
+		&:focus {
+			background: var(--white);
+			border-bottom: 1px solid var(--navy);
+		}
+	}
+
+	button {
+		width: 7.5rem;
+	}
+
+	&.error {
+		$error: tomato;
+
+		input[type='text'] {
+			background: rgba($error, 0.05);
+			border-bottom: 1px solid var(--error);
+		}
+		span {
+			color: var(--error);
+			font-size: 0.75rem;
+			position: absolute;
+			bottom: var(--unit-1);
+			left: var(--unit-2);
+			white-space: nowrap;
+		}
+	}
+}

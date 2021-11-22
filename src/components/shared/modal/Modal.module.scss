@@ -1,0 +1,60 @@
+.modal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+
+	.close {
+		background: none;
+		border: none;
+		cursor: pointer;
+		font-size: 1.6rem;
+		position: absolute;
+		top: var(--unit-2);
+		right: var(--unit-2);
+
+		> svg {
+			fill: currentColor;
+		}
+
+		&:hover {
+			transition: var(--transition-ease-in);
+		}
+	}
+
+	&-content {
+		width: 80%;
+	}
+
+	&--dark {
+		$black-2: #222;
+
+		background: rgba($black-2, 0.98);
+		color: var(--gray-c);
+
+		.close {
+			&:hover {
+				color: var(--white-2);
+			}
+		}
+	}
+
+	&--light {
+		$white: #fff;
+
+		background: rgba($white, 0.9);
+		color: inherit;
+
+		.close {
+			&:hover {
+				color: var(--black-3);
+			}
+		}
+	}
+}
